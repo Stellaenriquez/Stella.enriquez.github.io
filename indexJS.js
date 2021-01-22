@@ -81,9 +81,9 @@
 
    qq.forEach(function(q){
     q.onclick = function(){
- 
+      console.log(q)
     let content = q.getAttribute('data-content');
-      if (document.getElementById(content).style.display === 'none') {
+      if (document.getElementById(content).style.display === 'none' || document.getElementById(content).style.display === "") {
         document.getElementById(content).style.display = 'block'
           } else {
             document.getElementById(content).style.display = 'none';
